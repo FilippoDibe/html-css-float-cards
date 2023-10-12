@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 60%;
+    margin: auto;
+}
+header{
+    text-align: center; 
+}
+header h1{
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-weight: bold;
+    color: rgb(246, 14, 88);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col{
+    background-color: aqua;
+    width: calc(100% / 3 - 80px);
+    border: solid 1px;
+    float: left;
+   
+    margin: 40px 
+}
+/* dimensione immagini  */
+img{
+    height: 80px;
+    width: 80px;
+    align-items: left;
+}
+
