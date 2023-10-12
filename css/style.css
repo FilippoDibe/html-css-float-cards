@@ -27,17 +27,41 @@ main{
     clear: both;
 }
 .col{
-    background-color: aqua;
-    width: calc(100% / 3 - 80px);
-    border: solid 1px;
+    background-color: black;
+    width: calc(100% / 3 - 10px); 
     float: left;
-   
-    margin: 40px 
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+.col:nth-child(3n) {
+    margin-right: 0;
+}
+.col::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 /* dimensione immagini  */
 img{
     height: 80px;
     width: 80px;
-    align-items: left;
+    float:left;
 }
-
+.info{
+    float:left;
+    color:white;
+    padding:5px;
+    line-height: 1.5;
+}
+.info h6{
+    font-size: 16px;
+    font-weight: bold;
+}
+.info div{
+    font-size: 12px;
+}
+.info a {
+    text-decoration: none;
+}
